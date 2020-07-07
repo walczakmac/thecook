@@ -1,7 +1,7 @@
 package com.walczak.thecook.presentation.controller;
 
 import com.walczak.thecook.application.command.Bus;
-import com.walczak.thecook.application.command.CreateRecipe;
+import com.walczak.thecook.application.command.CreateRecipe.CreateRecipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;

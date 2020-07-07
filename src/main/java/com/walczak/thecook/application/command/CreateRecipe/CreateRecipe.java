@@ -1,9 +1,9 @@
-package com.walczak.thecook.application.command;
+package com.walczak.thecook.application.command.CreateRecipe;
 
 import com.walczak.thecook.application.Command;
-import com.walczak.thecook.domain.recipe.Ingredient;
 import lombok.Data;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
@@ -11,7 +11,8 @@ import java.util.Collection;
 public class CreateRecipe implements Command {
     @NotNull
     private final String name;
-    private final Collection<Ingredient> ingredients;
+    @NotEmpty
+    private final Collection<IngredientData> ingredients;
     @NotNull
     private final String description;
 }

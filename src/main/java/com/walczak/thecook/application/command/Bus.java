@@ -35,7 +35,7 @@ public class Bus implements CommandBus {
         try {
             handler.handle(command);
         } catch (Exception e) {
-
+            return;
         }
     }
 
