@@ -1,13 +1,9 @@
 package com.walczak.thecook.domain.recipe;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 
-@RequiredArgsConstructor
-@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "ingredient")
@@ -18,29 +14,29 @@ public class Ingredient {
     private final Long id = null;
 
     @Column(name = "name", nullable = false)
-    private final String name;
+    private String name;
 
     @Column(name = "unit", nullable = false)
-    private final String unit;
+    private String unit;
 
     @Column(name = "amount", nullable = false)
-    private final Integer amount;
+    private Integer amount;
 
     @Column(name = "calories", nullable = false)
-    private final Integer calories;
+    private Integer calories;
 
     @Column(name = "protein", nullable = false)
-    private final Integer protein;
+    private Integer protein;
 
     @Column(name = "carbohydrates", nullable = false)
-    private final Integer carbohydrates;
+    private Integer carbohydrates;
 
     @Column(name = "fiber", nullable = false)
-    private final Integer fiber;
+    private Integer fiber;
 
     @Column(name = "fat", nullable = false)
-    private final Integer fat;
+    private Integer fat;
 
     @Column(name = "fat_saturated", nullable = false)
-    private final Integer fatSaturated;
+    private Integer fatSaturated;
 }
